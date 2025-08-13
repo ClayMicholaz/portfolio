@@ -32,7 +32,6 @@ export default function Navbar() {
 
   return (
     <>
-      {/* Custom animation */}
       <style>
         {`
         @keyframes droplet {
@@ -51,15 +50,47 @@ export default function Navbar() {
         {sections.map((section) => (
           <a
             key={section.id}
-            href={`#${section.id}`}
+            href="#"
+            onClick={(e) => {
+              e.preventDefault();
+
+              const container = document.getElementById("scroll-container"); 
+              const target = document.getElementById(section.id);
+
+              if (container && target) {
+                container.style.scrollSnapType = "none";
+
+                const start = container.scrollTop;
+                const end = target.offsetTop;
+                const duration = 500;
+                let startTime = null;
+
+                const easeInOutQuad = (t) =>
+                  t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
+
+                const animate = (time) => {
+                  if (!startTime) startTime = time;
+                  const elapsed = time - startTime;
+                  const progress = Math.min(elapsed / duration, 1);
+
+                  container.scrollTop = start + (end - start) * easeInOutQuad(progress);
+
+                  if (progress < 1) {
+                    requestAnimationFrame(animate);
+                  } else {
+                    container.style.scrollSnapType = "y mandatory";
+                  }
+                };
+
+                requestAnimationFrame(animate);
+              }
+            }}
             className="group relative flex items-center"
           >
-            {/* Tooltip */}
             <span className="absolute right-full mr-4 px-3 py-1 rounded bg-gray-900 text-white text-sm opacity-0 translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-200">
               {section.label}
             </span>
 
-            {/* Dot */}
             <span
               className={`w-5 h-5 rounded-full transition-colors duration-200 ${
                 activeSection === section.id

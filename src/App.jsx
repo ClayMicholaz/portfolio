@@ -11,7 +11,10 @@ function App() {
 
   return (
     <>
-      <div className="scroll-smooth">
+      <div
+        id="scroll-container"
+        className="snap-y snap-mandatory h-screen overflow-y-scroll"
+      >
         <Navbar />
         <section id='hero'><Hero /></section>
         <section id='projects'><Projects /></section>
