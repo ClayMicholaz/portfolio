@@ -34,21 +34,22 @@ export default function Hero() {
   };
 
   return (
-    <section className="px-10 h-screen snap-start flex flex-row items-center justify-center bg-white text-gray-900 gap-10">
-      <img src="profile.jpg" className="w-56 h-56 rounded-full object-cover" />
+    <section className="px-6 sm:px-10 h-screen snap-start flex flex-col md:flex-row items-center justify-center bg-white text-gray-900 gap-6 md:gap-10">
+      <img src="profile.jpg" className="w-40 h-40 sm:w-56 sm:h-56 rounded-full object-cover" />
 
-      <div className="flex flex-col max-w-xl">
-        <h1 className="text-5xl font-bold">Clay Micholaz</h1>
-        <p className="mt-4 text-gray-600">
+      <div className="flex flex-col max-w-xl text-center md:text-left">
+        <h1 className="text-3xl sm:text-5xl font-bold">Clay Micholaz</h1>
+        <p className="mt-4 text-gray-600 text-sm sm:text-base">
           I’m a 3rd-semester Informatics student pursuing my Bachelor’s degree, passionate about becoming a full-stack developer. I’m constantly learning and improving my skills in the world of technology.
         </p>
         <button
           onClick={handleScroll}
-          className="mt-8 px-6 py-3 bg-gray-900 text-white rounded-full hover:bg-gray-700 transition"
+          className="mt-6 sm:mt-8 px-4 sm:px-6 py-2 sm:py-3 bg-gray-900 text-white rounded-full hover:bg-gray-700 transition"
         >
           Check Out My Work!
         </button>
       </div>
     </section>
+
   );
 }

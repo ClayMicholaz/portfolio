@@ -5,7 +5,7 @@ export default function Contact() {
     <section className="h-screen flex flex-col items-center justify-center snap-start bg-white text-gray-900 px-6">
       <h2 className="text-3xl font-semibold mb-8">Contact Me</h2>
 
-      <div className="flex flex-col gap-4 text-lg w-full max-w-sm">
+      <div className="flex flex-col gap-3 text-base sm:text-lg w-full max-w-xs sm:max-w-sm">
         <a
           href="https://mail.google.com/mail/?view=cm&fs=1&to=claymicholaz@gmail.com"
           target="_blank"

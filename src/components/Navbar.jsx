@@ -46,7 +46,8 @@ export default function Navbar() {
         `}
       </style>
 
-      <nav className="fixed right-10 top-1/2 -translate-y-1/2 flex flex-col gap-6 z-50">
+      {/* Navbar hidden on small screens, visible on md and up */}
+      <nav className="hidden md:flex fixed right-6 top-1/2 -translate-y-1/2 flex-col gap-6 z-50">
         {sections.map((section) => (
           <a
             key={section.id}
@@ -54,7 +55,7 @@ export default function Navbar() {
             onClick={(e) => {
               e.preventDefault();
 
-              const container = document.getElementById("scroll-container"); 
+              const container = document.getElementById("scroll-container");
               const target = document.getElementById(section.id);
 
               if (container && target) {
@@ -73,7 +74,8 @@ export default function Navbar() {
                   const elapsed = time - startTime;
                   const progress = Math.min(elapsed / duration, 1);
 
-                  container.scrollTop = start + (end - start) * easeInOutQuad(progress);
+                  container.scrollTop =
+                    start + (end - start) * easeInOutQuad(progress);
 
                   if (progress < 1) {
                     requestAnimationFrame(animate);
@@ -87,10 +89,12 @@ export default function Navbar() {
             }}
             className="group relative flex items-center"
           >
+            {/* Tooltip */}
             <span className="absolute right-full mr-4 px-3 py-1 rounded bg-gray-900 text-white text-sm opacity-0 translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-200">
               {section.label}
             </span>
 
+            {/* Dot */}
             <span
               className={`w-5 h-5 rounded-full transition-colors duration-200 ${
                 activeSection === section.id

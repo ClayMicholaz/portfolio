@@ -16,21 +16,22 @@ export default function Skills() {
   return (
     <section className="h-screen flex flex-col items-center justify-center snap-start bg-gray-50 text-gray-900 px-6">
       <h2 className="text-3xl font-semibold mb-6">Techs That I Use</h2>
-      <ul className="flex flex-wrap gap-6 justify-center">
+      <ul className="flex flex-wrap gap-4 sm:gap-6 justify-center">
         {skills.map((skill, index) => (
-          <li key={index} className="w-24">
+          <li key={index} className="w-20 sm:w-24">
             <a
               href={skill.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-white shadow rounded px-4 py-6 flex flex-col items-center hover:shadow-lg transition text-center"
+              className="bg-white shadow rounded px-3 sm:px-4 py-4 sm:py-6 flex flex-col items-center hover:shadow-lg transition text-center"
             >
               {skill.icon}
-              <span className="mt-2 text-sm font-medium">{skill.label}</span>
+              <span className="mt-1 sm:mt-2 text-xs sm:text-sm font-medium">{skill.label}</span>
             </a>
           </li>
         ))}
       </ul>
+
     </section>
   );
 }
