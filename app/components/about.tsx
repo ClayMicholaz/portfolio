@@ -13,7 +13,7 @@ export default function About() {
                 </p>
                 <p className="mb-4">
                     I previously completed a 6-month internship at{" "}
-                    <a className="font-medium font-bold" href="https://www.profescipta.co.id/" target="_blank" rel="noopener noreferrer">
+                    <a className="font-bold underline" href="https://www.profescipta.co.id/" target="_blank" rel="noopener noreferrer">
                         Profescipta Wahanatehnik
                     </a>
                     , a software development company, where I gained valuable experience in web development and software engineering.

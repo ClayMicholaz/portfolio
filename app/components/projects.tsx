@@ -87,7 +87,7 @@ export default function Projects() {
                 </ul>
             </div>
             <div className="mt-12">
-                <a className="inline-flex items-baseline font-medium leading-tight group/link text-base font-space" href="https://github.com/ClayMicholaz?tab=repositories" target="_blank" rel="noopener noreferrer" aria-label="View Full CV (opens in a new tab)">
+                <a className="inline-flex items-baseline font-medium leading-tight group/link text-base font-space underline" href="https://github.com/ClayMicholaz?tab=repositories" target="_blank" rel="noopener noreferrer" aria-label="View Full CV (opens in a new tab)">
                     <span>
                         Check Out My Other Projects
                         <GoArrowUpRight className="inline-block ml-1 h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1" aria-hidden="true" />

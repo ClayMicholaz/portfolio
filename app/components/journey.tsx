@@ -34,7 +34,7 @@ export default function Journey() {
                                 </h3>
                                 <p className="mt-2 text-sm leading-normal font-work">
                                     Participating in a hackathon, collaborating with a team to develop{" "}
-                                    <a className="font-bold" href="https://revdadas.vercel.app/" target="_blank" rel="noopener noreferrer">
+                                    <a className="font-bold underline" href="https://revdadas.vercel.app/" target="_blank" rel="noopener noreferrer">
                                         revdadas
                                     </a>
                                     , an AI-driven revenue forecasting & fraud detection system.
@@ -74,7 +74,7 @@ export default function Journey() {
                     </li>
                 </ol>
                 <div className="mt-12">
-                    <a className="inline-flex items-baseline font-medium leading-tight group/link text-base font-space" href="/Clay_Micholaz_Fu_CV.pdf" target="_blank" rel="noopener noreferrer" aria-label="View Full CV (opens in a new tab)">
+                    <a className="inline-flex items-baseline font-medium leading-tight group/link text-base font-space underline" href="/Clay_Micholaz_Fu_CV.pdf" target="_blank" rel="noopener noreferrer" aria-label="View Full CV (opens in a new tab)">
                         <span>
                             View Full CV
                                 <GoArrowUpRight className="inline-block ml-1 h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1" aria-hidden="true" />
