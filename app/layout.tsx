@@ -25,6 +25,18 @@ export const metadata: Metadata = {
     template: `%s | ${siteName}`,
   },
   description: siteDescription,
+  keywords: [
+    "Clay Micholaz",
+    "Clay Micholaz Fu",
+    "Full-Stack Developer",
+    "Software Engineer",
+    "Web Developer",
+    "Next.js Developer",
+    "React Developer",
+    "TypeScript Developer",
+    "Node.js Developer",
+    "Portfolio",
+  ],
   authors: [{ name: siteName, url: siteUrl }],
   creator: siteName,
   openGraph: {
@@ -65,16 +77,30 @@ const jsonLd = {
   url: siteUrl,
   jobTitle: "Full-Stack Developer",
   description: siteDescription,
-  email: "claymicholaz@gmail.com",
+  email: "mailto:claymicholaz@gmail.com",
   alumniOf: {
     "@type": "CollegeOrUniversity",
     name: "Bunda Mulia University",
   },
-  sameAs: [
-    socialLinks.github,
-    socialLinks.linkedin,
-    socialLinks.instagram,
+  knowsAbout: [
+    "Full-Stack Development",
+    "Web Development",
+    "React",
+    "Next.js",
+    "TypeScript",
+    "JavaScript",
+    "Node.js",
+    "Software Engineering",
+    "Python",
+    "MySQL",
+    "MongoDB",
+    "Supabase",
+    "Tailwind CSS",
+    "Git",
+    "GitHub",
   ],
+  sameAs: [socialLinks.github, socialLinks.linkedin, socialLinks.instagram],
+
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
