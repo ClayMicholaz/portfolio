@@ -10,21 +10,6 @@ export default function Journey() {
                 <ol className="group/list">
                     <li className="mb-12">
                         <div className="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4">
-                            <header className="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide opacity-60 sm:col-span-2 font-space" aria-label="August 2024 to Present">
-                                Aug 2024 — Present
-                            </header>
-                            <div className="z-10 sm:col-span-6">
-                                <h3 className="font-medium leading-snug font-space">
-                                    Computer Science Student · Bunda Mulia University
-                                </h3>
-                                <p className="mt-2 text-sm leading-normal font-work">
-                                    Currently pursuing a degree in Computer Science, specializing in AI.
-                                </p>
-                            </div>
-                        </div>
-                    </li>
-                    <li className="mb-12">
-                        <div className="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4">
                             <header className="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide opacity-60 sm:col-span-2 font-space" aria-label="March 2026 to Present">
                                 Mar 2026 — Present
                             </header>
@@ -37,7 +22,7 @@ export default function Journey() {
                                     <a className="font-bold underline" href="https://revdadas.vercel.app/" target="_blank" rel="noopener noreferrer">
                                         revdadas
                                     </a>
-                                    , an AI-driven revenue forecasting & fraud detection system.
+                                    , an AI-driven revenue forecasting and fraud detection system.
                                 </p>
                             </div>
                         </div>
@@ -52,7 +37,7 @@ export default function Journey() {
                                     Developer Intern · Profescipta Wahanatehnik
                                 </h3>
                                 <p className="mt-2 text-sm leading-normal font-work">
-                                    Interning at a tech company, gaining hands-on experience in software development and team collaboration.
+                                    Completed a 6-month internship gaining hands-on experience in software development and team collaboration.
                                 </p>
                             </div>
                         </div>
@@ -67,7 +52,22 @@ export default function Journey() {
                                     Student · Full-Stack Development Bootcamp
                                 </h3>
                                 <p className="mt-2 text-sm leading-normal font-work">
-                                    Participating in a intensive bootcamp from harisenin.com to enhance my full-stack development skills.
+                                    Participated in an intensive bootcamp from harisenin.com to strengthen my full-stack development skills.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li className="mb-12">
+                        <div className="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4">
+                            <header className="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide opacity-60 sm:col-span-2 font-space" aria-label="August 2024 to Present">
+                                Aug 2024 — Present
+                            </header>
+                            <div className="z-10 sm:col-span-6">
+                                <h3 className="font-medium leading-snug font-space">
+                                    Computer Science Student · Bunda Mulia University
+                                </h3>
+                                <p className="mt-2 text-sm leading-normal font-work">
+                                    Pursuing a bachelor&apos;s degree in Computer Science with a specialization in AI.
                                 </p>
                             </div>
                         </div>

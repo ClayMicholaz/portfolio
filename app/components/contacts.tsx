@@ -2,7 +2,11 @@ import { FaLinkedin, FaGithub, FaInstagram, FaWhatsapp, FaEnvelope } from "react
 
 export default function Contacts() {
     return (
-        <ul className="ml-1 mt-8 flex items-center" aria-label="Social media">
+        <div>
+            <p className="mt-8 max-w-xs text-sm leading-normal font-work">
+                For collaboration and software engineering opportunities, <a className="font-bold underline" href="mailto:claymicholaz@gmail.com">email me</a>.
+            </p>
+            <ul className="ml-1 mt-5 flex items-center" aria-label="Social media">
             <li className="mr-5 shrink-0 text-xs">
                 <a className="block hover:opacity-100 opacity-60 transition-opacity" href="https://github.com/ClayMicholaz" target="_blank" rel="noopener noreferrer" aria-label="GitHub (opens in a new tab)">
                     <FaGithub className="h-6 w-6" />
@@ -28,6 +32,7 @@ export default function Contacts() {
                     <FaEnvelope className="h-6 w-6" />
                 </a>
             </li>
-        </ul>
+            </ul>
+        </div>
     )
 }

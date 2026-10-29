@@ -20,14 +20,18 @@ export default function Projects() {
                                         </span>
                                     </h3>
                                     <p className="mt-2 text-sm leading-normal font-work">
-                                        A web application that lets the user get news from various sources, with a focus on providing information without distractions.
+                                        A news aggregation web application that brings together stories from multiple sources in a distraction-free reading experience. Built with modern web technologies and focused on clear content discovery.
+                                    </p>
+                                    <p className="mt-2 text-xs font-medium uppercase tracking-wide opacity-60 font-space">
+                                        News aggregation · Web application
                                     </p>
                                 </div>
                                 <Image
-                                    alt="Storylens Project"
+                                    alt="Storylens news aggregation web application"
                                     loading="lazy"
                                     width={200}
-                                    height={48}
+                                    height={112}
+                                    sizes="(min-width: 640px) 25vw, 100vw"
                                     className="aspect-video object-cover rounded border-2 border-current/10 transition group-hover:border-current/30 sm:order-1 sm:col-span-2 sm:translate-y-1"
                                     src="/storylens.webp"
                                 />
@@ -45,14 +49,18 @@ export default function Projects() {
                                         </span>
                                     </h3>
                                     <p className="mt-2 text-sm leading-normal font-work">
-                                        A Tic Tac Toe game that you cannot beat, you play against an AI opponent that uses the minimax algorithm with alpha beta pruning.
+                                        A Tic Tac Toe game against an AI opponent that uses the minimax algorithm with alpha-beta pruning, making the game difficult to beat.
+                                    </p>
+                                    <p className="mt-2 text-xs font-medium uppercase tracking-wide opacity-60 font-space">
+                                        Artificial intelligence · Minimax algorithm
                                     </p>
                                 </div>
                                 <Image
-                                    alt="Tic Tac Toe Project"
+                                    alt="Tic Tac Toe game against a minimax AI opponent"
                                     loading="lazy"
                                     width={200}
-                                    height={48}
+                                    height={112}
+                                    sizes="(min-width: 640px) 25vw, 100vw"
                                     className="aspect-video object-cover rounded border-2 border-current/10 transition group-hover:border-current/30 sm:order-1 sm:col-span-2 sm:translate-y-1"
                                     src="/tictactoe.webp"
                                 />
@@ -70,14 +78,18 @@ export default function Projects() {
                                         </span>
                                     </h3>
                                     <p className="mt-2 text-sm leading-normal font-work">
-                                        A web application designed to map UMKMs (Small and Medium Enterprises) for various purposes such as identification and analysis.
+                                        A web application for mapping UMKMs (small and medium enterprises), supporting business identification and analysis through an interactive geographic view.
+                                    </p>
+                                    <p className="mt-2 text-xs font-medium uppercase tracking-wide opacity-60 font-space">
+                                        Data visualization · Mapping application
                                     </p>
                                 </div>
                                 <Image
-                                    alt="UMKM Mapper Project"
+                                    alt="UMKM Mapper interactive business mapping application"
                                     loading="lazy"
                                     width={200}
-                                    height={48}
+                                    height={112}
+                                    sizes="(min-width: 640px) 25vw, 100vw"
                                     className="aspect-video object-cover rounded border-2 border-current/10 transition group-hover:border-current/30 sm:order-1 sm:col-span-2 sm:translate-y-1"
                                     src="/umkm-mapper.webp"
                                 />
@@ -87,7 +99,7 @@ export default function Projects() {
                 </ul>
             </div>
             <div className="mt-12">
-                <a className="inline-flex items-baseline font-medium leading-tight group/link text-base font-space underline" href="https://github.com/ClayMicholaz?tab=repositories" target="_blank" rel="noopener noreferrer" aria-label="View Full CV (opens in a new tab)">
+                <a className="inline-flex items-baseline font-medium leading-tight group/link text-base font-space underline" href="https://github.com/ClayMicholaz?tab=repositories" target="_blank" rel="noopener noreferrer" aria-label="View Clay Micholaz&apos;s other projects on GitHub (opens in a new tab)">
                     <span>
                         Check Out My Other Projects
                         <GoArrowUpRight className="inline-block ml-1 h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1" aria-hidden="true" />

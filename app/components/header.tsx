@@ -5,7 +5,7 @@ import Typed from "typed.js";
 import Link from "next/link";
 
 export default function Header() {
-  const roleRef = useRef(null);
+  const roleRef = useRef<HTMLSpanElement>(null);
 
   useEffect(() => {
     const typed = new Typed(roleRef.current, {
@@ -34,11 +34,12 @@ export default function Header() {
       </h1>
 
       <h2 className="mt-3 text-lg font-medium tracking-tight sm:text-xl font-space">
-        <span ref={roleRef} />
+        <span ref={roleRef}>Full-Stack Developer</span>
       </h2>
 
       <p className="mt-4 max-w-xs leading-normal font-work">
-        Building through continuous learning.
+        Computer Science student and full-stack developer building web applications,
+        AI projects, and software engineering solutions.
       </p>
     </div>
   );

@@ -9,7 +9,7 @@ export default function About() {
                     Hi! I&apos;m Clay, and I love learning by building. I&apos;m a Computer Science student who enjoys exploring new technologies and experiences that make me a better developer.
                 </p>
                 <p className="mb-4">
-                    Currently, I&apos;m on my fifth semester of college, pursuing a bachelor&apos;s degree in Computer Science. I have a strong interest in web development, AI, and software engineering in general, and I&apos;m always looking for new ways to improve my skills and knowledge.
+                    I&apos;m pursuing a bachelor&apos;s degree in Computer Science at Bunda Mulia University, specializing in AI. My interests include full-stack web development, software engineering, and building practical applications with React, Next.js, TypeScript, Node.js, Python, and databases such as MySQL, MongoDB, and Supabase.
                 </p>
                 <p className="mb-4">
                     I previously completed a 6-month internship at{" "}
@@ -19,7 +19,7 @@ export default function About() {
                     , a software development company, where I gained valuable experience in web development and software engineering.
                 </p>
                 <p>
-                    In my free time, I enjoy playing the guitar, hanging out with friends, staying active through sports.
+                    I enjoy turning ideas into useful products, learning new technologies, and collaborating with teams. In my free time, I play guitar, spend time with friends, and stay active through sports.
                 </p>
             </div>
         </section>
