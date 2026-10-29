@@ -33,8 +33,9 @@ export default function Header() {
         <Link href="/">Clay Micholaz</Link>
       </h1>
 
-      <h2 className="mt-3 text-lg font-medium tracking-tight sm:text-xl font-space">
-        <span ref={roleRef}>Full-Stack Developer</span>
+      <h2 className="mt-3 text-lg font-medium tracking-tight sm:text-xl font-space" aria-label="Professional roles">
+        <span ref={roleRef} aria-hidden="true">Full-Stack Developer</span>
+        <span className="sr-only">Full-Stack Developer</span>
       </h2>
 
       <p className="mt-4 max-w-xs leading-normal font-work">
